@@ -5,6 +5,234 @@
       "questionId": 1,
       "format": "text",
       "name": "FirstName"
+    },
+    {
+      "questionText": "Whats your last name?",
+      "questionId": 2,
+      "format": "text",
+      "name": "LastName"
+    },
+    {
+      "questionText": "What's the name of your therapist?",
+      "questionId": 3,
+      "format": "text",
+      "name": "TherapistName"
+    },
+    {
+      "questionText": "Are you overall satisfied with your therapist?",
+      "questionId": 4,
+      "format": "checkbox",
+      "answerOptions": [
+        "Yes",
+        "No"
+      ],
+      "name": "SatisfiedByTherapist"
+    },
+    {
+      "questionText": "Until today, how has your overall experience been with your therapist? Feel free to tell us?",
+      "questionId": 5,
+      "format": "textfield",
+      "name": "OverallExperience"
+    },
+    {
+      "questionText": "After three sessions, how well do you feel heard by your therapist?",
+      "questionId": 6,
+      "format": "checkbox",
+      "answerOptions": [
+        "1 (not at all)",
+        2,
+        3,
+        4,
+        "5(very well)"
+      ],
+      "name": "FeelHeardByTherapist"
+    },
+    {
+      "questionText": "How well do you feel seen by your therapist?",
+      "questionId": 7,
+      "format": "checkbox",
+      "answerOptions": [
+        "1 (not at all)",
+        2,
+        3,
+        4,
+        "5(very well)"
+      ],
+      "name": "FeelSeenByTherapist"
+    },
+    {
+      "questionText": "How well do you feel understood by your therapist?",
+      "questionId": 8,
+      "format": "checkbox",
+      "answerOptions": [
+        "1 (not at all)",
+        2,
+        3,
+        4,
+        "5(very well)"
+      ],
+      "name": "FeelUnderstoodByTherapist"
+    },
+    {
+      "questionText": " How safe do you feel with your therapist?",
+      "questionId": 9,
+      "format": "checkbox",
+      "answerOptions": [
+        "1 (not at all)",
+        2,
+        3,
+        4,
+        "5(very well)"
+      ],
+      "name": "FeelSafeByTherapist"
+    },
+    {
+      "questionText": " How comfortable do you feel with your therapist?",
+      "questionId": 10,
+      "format": "checkbox",
+      "answerOptions": [
+        "1 (not at all)",
+        2,
+        3,
+        4,
+        "5(very well)"
+      ],
+      "name": "FeelComfortableWithTherapist"
+    },
+    {
+      "questionText": " How long did it take for you to feel comfortable with your therapist?",
+      "questionId": 11,
+      "format": "checkbox",
+      "answerOptions": [
+        "After the first session",
+        "After the second session",
+        "After the third session",
+        "I am not yet comfortable"
+      ],
+      "name": "HowlongTofeelComfortableWithTherapist"
+    },
+    {
+      "questionText": " How much confidence do you have that your therapist can help you with what you need help with?",
+      "questionId": 12,
+      "format": "checkbox",
+      "answerOptions": [
+        "1 (low confidence)",
+        2,
+        3,
+        4,
+        "5(high confidence)"
+      ],
+      "name": "ConfidenceInTherapist"
+    },
+    {
+      "questionText": " Up until this point, do you feel that you are 'clicking' with your therapist?",
+      "questionId": 13,
+      "format": "checkbox",
+      "answerOptions": [
+        "Yes, I feel like we are clicking",
+        "No, I don't feel like we are clicking",
+        "Other"
+      ],
+      "name": "ClickingWithTherapist"
+    },
+    {
+      "questionText": " How well do you think your therapist matches your preferences and needs - described in the form you completed?",
+      "questionId": 14,
+      "format": "checkbox",
+      "answerOptions": [
+        "1 (not at all)",
+        2,
+        3,
+        4,
+        "5(very well)"
+      ],
+      "name": "TherapistMatchesYourPreferences"
+    },
+    {
+      "questionText": "What are you enjoying most about your therapist so far?",
+      "questionId": 15,
+      "format": "textfield",
+      "name": "EnjoyingMostAboutTherapist"
+    },
+    {
+      "questionText": "What are you enjoying most about your therapy so far?",
+      "questionId": 16,
+      "format": "textfield",
+      "name": "EnjoyingMostAboutTherapy"
+    },
+    {
+      "questionText": "What are you enjoying least about your therapist so far?",
+      "questionId": 17,
+      "format": "textfield",
+      "name": "EnjoyingLeastAboutTherapist"
+    },
+    {
+      "questionText": "What are you enjoying least about your therapy so far?",
+      "questionId": 18,
+      "format": "textfield",
+      "name": "EnjoyingLeastAboutTherapy"
+    },
+    {
+      "questionText": "Out of the therapists that we presented, why did you choose the one you did?",
+      "questionId": 19,
+      "format": "textfield",
+      "name": "WhyChooseThisTherapist"
+    },
+    {
+      "questionText": " Before contacting us, how long had you been thinking about seeing a therapist?",
+      "questionId": 20,
+      "format": "checkbox",
+      "answerOptions": [
+        "Less than two months",
+        "More than two months",
+        "Less than six months",
+        "Between 6-12 months",
+        "Between 12-24 months",
+        "More than 24 months"
+      ],
+      "name": "HowLongHaveYouBeenThinkingAboutTherapist"
+    },
+    {
+      "questionText": " How long were you actively looking for a therapist before contacting us?",
+      "questionId": 21,
+      "format": "checkbox",
+      "answerOptions": [
+        "Less than two months",
+        "More than two months",
+        "Less than six months",
+        "Between 6-12 months",
+        "Between 12-24 months",
+        "More than 24 months"
+      ],
+      "name": "ActivelyLookingForTherapist"
+    },
+    {
+      "questionText": " When making your therapist choice, do you believe it is important for your therapist to have a profile picture in their profile?",
+      "questionId": 22,
+      "format": "checkbox",
+      "answerOptions": [
+        "Yes, I think a profile picture is important",
+        "No, I don't think a profile picture is important",
+        "Other"
+      ],
+      "name": "TherapistHaveProfilePicture"
+    },
+    {
+      "questionText": " Do you believe it is important for your therapist to have their own professional website (and not only a Linkedin profile or similar)?",
+      "questionId": 23,
+      "format": "checkbox",
+      "answerOptions": [
+        "Yes, I think a professional website is important",
+        "No, I don't think a professional website is important",
+        "Other"
+      ],
+      "name": "TherapistToHaveOwnWebsite"
+    },
+    {
+      "questionText": "Is there anything you think we missed asking you in the form, in relation to your personal preferences and needs, to be able to match you correctly?",
+      "questionId": 24,
+      "format": "textfield",
+      "name": "AnythingWeMissed"
     }
   ],
   "answers": [
@@ -31,6 +259,124 @@
         "Time": "22:41:53"
       },
       "id": 11
+    },
+    {
+      "value": {
+        "FirstName": "U2FsdGVkX19APLc50G0ecR99zJ9fIPqi47haONdfDBw=",
+        "LastName": "U2FsdGVkX18sXi+D0vLM8M+JAyUFF6yPwDh1oT5XAyk=",
+        "TherapistName": "U2FsdGVkX1/hE8g1ntRVelG9b+vUOnlPfR5+SxTKrdg=",
+        "SatisfiedByTherapist": [
+          "Yes"
+        ],
+        "OverallExperience": "I feel very good. After few sessions I feel my therapist listens and understands me. and responds well. ",
+        "FeelHeardByTherapist": [
+          "5(very well)"
+        ],
+        "FeelSeenByTherapist": [
+          3
+        ],
+        "FeelUnderstoodByTherapist": [
+          "5(very well)"
+        ],
+        "FeelSafeByTherapist": [
+          4
+        ],
+        "FeelComfortableWithTherapist": [
+          "5(very well)"
+        ],
+        "HowlongTofeelComfortableWithTherapist": [
+          "After the second session"
+        ],
+        "ConfidenceInTherapist": [
+          3
+        ],
+        "ClickingWithTherapist": [
+          "No, I don't feel like we are clicking"
+        ],
+        "TherapistMatchesYourPreferences": [
+          4
+        ],
+        "EnjoyingMostAboutTherapist": "Im enjoying my therapist she is the most amazing and takes care of me i am very pleased and i feel better ",
+        "EnjoyingMostAboutTherapy": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+        "EnjoyingLeastAboutTherapist": "Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows\n",
+        "EnjoyingLeastAboutTherapy": "Lorem ipsum is typically a corrupted version of 'De finibus bonorum et malorum', a 1st century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+        "WhyChooseThisTherapist": "Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s, when it was popularized by advertisements for Letraset transfer sheets.[1] Lorem ipsum was introduced to the digital",
+        "HowLongHaveYouBeenThinkingAboutTherapist": [
+          "Between 12-24 months"
+        ],
+        "ActivelyLookingForTherapist": [
+          "Less than six months"
+        ],
+        "TherapistHaveProfilePicture": [
+          "Yes, I think a profile picture is important"
+        ],
+        "TherapistToHaveOwnWebsite": [
+          "Yes, I think a professional website is important"
+        ],
+        "AnythingWeMissed": "ave since adopted Lorem ipsum,[2] as have many LaTeX packages,[3][4][5] web content managers such as Joomla! and WordPress, and CSS libraries such as Semantic UI.",
+        "Date": "2021-10-13",
+        "Time": "21:55:19"
+      },
+      "id": 12
+    },
+    {
+      "value": {
+        "FirstName": "U2FsdGVkX19ws9RjtDV7mtQd4x9pB5C99/kUMqmy81g=",
+        "LastName": "U2FsdGVkX19hGvNvw8jVtdE05EdJ8QAzyWrm5xyn+iI=",
+        "TherapistName": "U2FsdGVkX19VTZikSP83TxXLyXq2wQlbKsPWnCXW5EU=",
+        "SatisfiedByTherapist": [
+          "No"
+        ],
+        "OverallExperience": "how has your overall experience been with your therapist? Feel free to tell us. how has your overall experience been with your therapist? Feel free to tell us",
+        "FeelHeardByTherapist": [
+          "1 (not at all)"
+        ],
+        "FeelSeenByTherapist": [
+          2
+        ],
+        "FeelUnderstoodByTherapist": [
+          3
+        ],
+        "FeelSafeByTherapist": [
+          4
+        ],
+        "FeelComfortableWithTherapist": [
+          "5(very well)"
+        ],
+        "HowlongTofeelComfortableWithTherapist": [
+          "After the first session"
+        ],
+        "ConfidenceInTherapist": [
+          2
+        ],
+        "ClickingWithTherapist": [
+          "Other"
+        ],
+        "TherapistMatchesYourPreferences": [
+          "1 (not at all)"
+        ],
+        "EnjoyingMostAboutTherapist": "how has your overall experience been with your therapist? Feel free to tell us....how has your overall experience been with your therapist? Feel free to tell us......how has your overall experience been with your therapist? Feel free to tell us",
+        "EnjoyingMostAboutTherapy": "how has your overall experience been with your therapist? Feel free to tell us..how has your overall experience been with your therapist? Feel free to tell us..how has your overall experience been with your therapist? Feel free to tell us..how has your overall experience been with your therapist? Feel free to tell us",
+        "EnjoyingLeastAboutTherapist": "how has your overall experience been with your therapist? Feel free to tell us. how has your overall experience been with your therapist? Feel free to tell us. how has your overall experience been with your therapist? Feel free to tell us",
+        "EnjoyingLeastAboutTherapy": "how has your overall experience been with your therapist? Feel free to tell us nnnnnnnn how has your overall experience been with your therapist? Feel free to tell usnnnnnnnnn",
+        "WhyChooseThisTherapist": "how has your overall experience been with your therapist? Feel free to tell us bbbbbb how has your overall experience been with your therapist? Feel free to tell us bbbbb",
+        "HowLongHaveYouBeenThinkingAboutTherapist": [
+          "Between 6-12 months"
+        ],
+        "ActivelyLookingForTherapist": [
+          "More than two months"
+        ],
+        "TherapistHaveProfilePicture": [
+          "No, I don't think a profile picture is important"
+        ],
+        "TherapistToHaveOwnWebsite": [
+          "Yes, I think a professional website is important"
+        ],
+        "AnythingWeMissed": "how has your overall experience been with your therapist? Feel free to tell us mmmmm how has your overall experience been with your therapist? Feel free to tell us mmmm how has your overall experience been with your therapist? Feel free to tell us",
+        "Date": "2021-10-13",
+        "Time": "22:58:3"
+      },
+      "id": 13
     }
   ]
 }

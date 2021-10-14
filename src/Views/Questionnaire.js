@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Formik, Form } from 'formik'
-// import Grid from '@mui/material-ui/core'
 import validationSchema from '../Validation/Validation'
 import TextFieldQuestions from '../Components/TextFieldQuestions'
 import PrimaryButton from '../Components/PrimaryButton'
@@ -8,46 +7,42 @@ import CheckboxQuestion from '../Components/CheckboxQuestion'
 import { ButtonGroup, Grid } from '@material-ui/core'
 require("dotenv").config()
 const CryptoJS = require('crypto-js');
-// const crypto = require("crypto");
 const REACT_APP_API_KEY = process.env.REACT_APP_SECRET_KEY
-// var REACT_APP_SECRET_KEY = process.env.SECRET_KEY;
 
-
+//encrypt names using Secret key from dotenv file
 const encryptNames = (name) => {
-    console.log("Inside encrypt func: ", name);
-    console.log("REACT_APP_SECRET_KEY: ", REACT_APP_API_KEY)
+    // console.log("Inside encrypt func: ", name);
+    // console.log("REACT_APP_SECRET_KEY: ", REACT_APP_API_KEY)
     const encryptedUserName = CryptoJS.AES.encrypt(name, REACT_APP_API_KEY).toString();
-    console.log("Encrypted User Name: ", encryptedUserName)
-
+    // console.log("Encrypted User Name: ", encryptedUserName)
     return encryptedUserName;
-    // let dcryptedUserName = CryptoJS.AES.decrypt(encryptedUserName, REACT_APP_API_KEY).toString(CryptoJS.enc.Utf8);
-    // console.log("Dcrypted User Name: ", dcryptedUserName)
 }
-
-
+//getting date from Date api
 const getDate = () => {
     var today = new Date();
     var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
     return date
 }
-
+//getting time from Date api
 const getTime = () => {
     var today = new Date();
     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     return time
 }
-
+//sending value object to json
 const sendDataToDatabase = async (value) => {
 
     console.log("In sendDataFunction: ", value)
-
     console.log("First name: ", value.FirstName)
     console.log("Last name: ", value.LastName)
 
-    const encryptedName = encryptNames(value.FirstName);
+    const encryptedFirstName = encryptNames(value.FirstName);
+    const encryptedLastName = encryptNames(value.LastName);
+    const encryptedTherapistName = encryptNames(value.TherapistName);
 
-
-    value.FirstName = encryptedName;
+    value.FirstName = encryptedFirstName;
+    value.LastName = encryptedLastName;
+    value.TherapistName = encryptedTherapistName;
 
 
     let date = getDate();
@@ -56,7 +51,6 @@ const sendDataToDatabase = async (value) => {
     let newObj = Object.assign(value, { Date: date }, { Time: time });
 
     console.log(newObj);
-
 
     const requestOptions = {
         method: 'POST',
@@ -68,9 +62,6 @@ const sendDataToDatabase = async (value) => {
     console.log("data: ", data)
     // this.data({ postId: data.id })
 }
-
-
-
 
 
 //function with switch statement. recieves the question object and current question index
@@ -114,16 +105,7 @@ const theSwitchStatment = (questions, index, values) => {
     }
 }
 
-// const Item = styled(Paper)(({ theme }) => ({
-//     ...theme.typography.body2,
-//     padding: theme.spacing(1),
-//     textAlign: 'center',
-//     color: theme.palette.text.secondary,
-// }));
-
-
 const Questionnaire = () => {
-
     const [questions, setQuestions] = useState(null)
     const [formValues, setFormValues] = useState(null)
 
@@ -136,7 +118,7 @@ const Questionnaire = () => {
                 setQuestions(data);
             });
     }, [])//dependency array
-
+    // console.log(questions)
     //manages the next question index via the next button. 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     //manages the label of the buttons 
@@ -156,7 +138,6 @@ const Questionnaire = () => {
             setButtonType('submit');
         }
     };
-
 
     const handlePreviousButtonClick = (questions) => {
         console.log("Inside previous - current question ", currentQuestion)
@@ -194,18 +175,14 @@ const Questionnaire = () => {
         // console.log('submitProps', submitProps)
         setFormValues(values)
         sendDataToDatabase(values);
-
+        window.location.href = "  http://localhost:3003/success"
         submitProps.setSubmitting(false)
         submitProps.resetForm()
-
-        alert('Your form is submmitted succesfully.')
-
+        // alert('Your form is submmitted succesfully.')
     };
 
 
-
     return (
-
         <Formik
             initialValues={formValues || initialValues}
             validationSchema={validationSchema}
@@ -230,6 +207,11 @@ const Questionnaire = () => {
                                 length={questions && questions.length}
                                 label={buttonlabel}
                                 type={buttonType}
+                            //             onKeyDown={(e) => {
+                            //     if (e.key === 'Enter') {
+                            //       handleSubmit();
+                            //     }
+                            //   }}
                             />
                         </Grid>
                         <Grid item xs={12}>
@@ -255,10 +237,7 @@ const Questionnaire = () => {
             }
 
         </Formik >
-
-
     )
-
 }
 
 export default Questionnaire

@@ -8,7 +8,7 @@ import {
 import Answers from './Answers';
 import User from './User';
 import Questionnaire from './Questionnaire';
-
+import Success from './Success';
 
 const Views = () => {
     return (
@@ -16,6 +16,7 @@ const Views = () => {
             <Route exact path="/" component={Questionnaire} />
             <Route exact path="/answers" component={Answers} />
             <Route path="/user/:id" component={User} />
+            <Route path="/success" component={Success} />
         </Router>
     );
 };

@@ -60,3 +60,15 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+li {
+  color: rgb(194, 14, 9);
+  list-style: none;
+  margin: 10px;
+}
+
+.answer-label {
+  color: rgb(78 19 19);
+  font-style: italic;
+  font-weight: 500;
+}
